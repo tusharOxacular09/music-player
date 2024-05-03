@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/main.css" />
+    <title>Music Player</title>
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <!-- Navigation Section -->
+    <nav class="navbar">
+      <div class="container">
+        <a style="text-decoration: none; color: white" href="../index.html">
+          <div id="nav-logo">
+            <img src="/../images/music-player-logo.png" alt="logo" />
+            <h1 class="logo">MusicApp</h1>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li class="hidden-in-small"><a href="#">Home</a></li>
+          <li class="hidden-in-small"><a href="#playlist">Playlists</a></li>
+          <li class="notification-icon hidden-in-small">
+            <img src="images/notification.png" alt="Profile" />
+          </li>
+          <li>
+            <img id="profile-image" src="images/user-image.jpg" alt="Profile" />
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Navigation Section End -->
+
+    <!-- Courosal Home Section -->
+    <section class="home">
+      <div class="carousel">
+        <div class="carousel-slide">
+          <img src="images/scroller-image1.jpg" alt="Image 1" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/scroller-image2.jpg" alt="Image 2" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/scroller-image3.jpg" alt="Image 3" />
+        </div>
+        <div class="carousel-slide">
+          <img src="images/scroller-image4.jpg" alt="Image 4" />
+        </div>
+      </div>
+    </section>
+    <!-- Courosal End -->
+
+    <!-- Music Lists -->
+    <h2 style="color: white; margin-top: 20px; margin-left: 20px">Trendings</h2>
+    <div class="music-list">
+      <a href="#musicPlayerContainer" id="anchor-link">
+        <div class="music-card">
+          <div class="music-image">
+            <img src="images/user-image.jpg" alt="Music 1" />
+          </div>
+          <div class="music-details">
+            <h4>Bartarako</h4>
+            <p>Artist: Tushar Kanta Swain</p>
+            <p>Album: Radix</p>
+            <p>Ratings: ★★★★☆</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#musicPlayerContainer" id="anchor-link">
+        <div class="music-card">
+          <div class="music-image">
+            <img src="images/artist-4.jpg" alt="Music 1" />
+          </div>
+          <div class="music-details">
+            <h4>Willow</h4>
+            <p>Artist: Tushar Kanta Swain</p>
+            <p>Album: Radix</p>
+            <p>Ratings: ★★★★☆</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#musicPlayerContainer" id="anchor-link">
+        <div class="music-card">
+          <div class="music-image">
+            <img src="images/new-english-2.jpg" alt="Music 2" />
+          </div>
+          <div class="music-details">
+            <h4>Barsiloana</h4>
+            <p>Artist: Tushar Kanta Swain</p>
+            <p>Album: Radix</p>
+            <p>Ratings: ★★★★☆</p>
+          </div>
+        </div>
+      </a>
+
+      <a href="#musicPlayerContainer" id="anchor-link">
+        <div class="music-card">
+          <div class="music-image">
+            <img src="images/latest-release-2.png" alt="Music 4" />
+          </div>
+          <div class="music-details">
+            <h4>Loude</h4>
+            <p>Artist: Greece Motoranoubha</p>
+            <p>Album: Barselina</p>
+            <p>Ratings: ★★★★☆</p>
+          </div>
+        </div>
+      </a>
+    </div>
+    <!-- Music Lists End -->
+
+    <!-- Music Player -->
+    <div id="musicPlayerContainer" class="musicPlayerContainer">
+      <div class="music-player-card">
+        <a href="#"
+          ><img src="images/cross.png" id="close-modal" alt="close"
+        /></a>
+        <img
+          src="images/new-music-1.png"
+          alt="Album Cover"
+          class="album-cover"
+        />
+        <div class="controls">
+          <button class="play-pause">
+            <img id="back-img" src="/images/next-button.png" alt="" />
+            <img src="/images/play-button.png" alt="" />
+            <img src="/images/next-button.png" alt="" />
+          </button>
+          <button class="volume"><i class="fas fa-volume-up"></i></button>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="progress-bar"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div id="musicPlayerContainer2" class="musicPlayerContainer2">
+      <div class="music-player-card music-player-card2">
+        <a href="#"
+          ><img src="images/cross.png" id="close-modal" alt="close"
+        /></a>
+        <img
+          src="images/playlist-5.jpg"
+          alt="Album Cover"
+          class="album-cover"
+        />
+        <div class="controls">
+          <button class="play-pause">
+            <img id="back-img" src="/images/next-button.png" alt="" />
+            <img src="/images/play-button.png" alt="" />
+            <img src="/images/next-button.png" alt="" />
+          </button>
+          <button class="volume"><i class="fas fa-volume-up"></i></button>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="progress-bar"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Music Player Close -->
+
+    <!-- PlayList Section -->
+    <section id="playlist" class="playlist">
+      <section class="playlist-left-container">
+        <h2>Popular Singers</h2>
+        <div class="singers-container">
+          <a
+            style="text-decoration: none; color: white"
+            href="/html/songDetails.html"
+          >
+            <div class="singer">
+              <img src="images/artist-1.jpeg" alt="Singer 1" />
+              <p class="singer-name">Tushar</p>
+            </div>
+          </a>
+          <a
+            style="text-decoration: none; color: white"
+            href="/html/songDetails.html"
+          >
+            <div class="singer">
+              <img src="images/artist-3.jpg" alt="Singer 2" />
+              <p class="singer-name">Harry</p>
+            </div>
+          </a>
+          <a
+            style="text-decoration: none; color: white"
+            href="/html/songDetails.html"
+          >
+            <div class="singer">
+              <img src="images/artist-4.jpg" alt="Singer 1" />
+              <p class="singer-name">Nazia</p>
+            </div>
+          </a>
+          <a
+            style="text-decoration: none; color: white"
+            href="/html/songDetails.html"
+          >
+            <div class="singer">
+              <img src="images/artist-5.jpg" alt="Singer 2" />
+              <p class="singer-name">Wakitokia</p>
+            </div>
+          </a>
+          <a
+            style="text-decoration: none; color: white"
+            href="/html/songDetails.html"
+          >
+            <div class="singer">
+              <img src="images/artist-6.jpg" alt="Singer 2" />
+              <p class="singer-name">Monolin</p>
+            </div>
+          </a>
+          <a
+            style="text-decoration: none; color: white"
+            href="/html/songDetails.html"
+          >
+            <div class="singer">
+              <img src="images/artist-7.jpg" alt="Singer 2" />
+              <p class="singer-name">MC Stan</p>
+            </div>
+          </a>
+        </div>
+
+        <!-- Genre Start -->
+        <h2 style="color: white; margin-top: 20px">Genre</h2>
+        <div id="genre">
+          <!--Genre Item 1-->
+          <div id="genre-item">
+            <div id="genre-item-background-1">Party</div>
+          </div>
+          <!--End of genre item 1-->
+          <!--genre item 2-->
+          <div id="genre-item">
+            <div id="genre-item-background-2">Electronic</div>
+          </div>
+          <!--End of genre item 2-->
+          <!--Genre Item 3-->
+          <div id="genre-item">
+            <div id="genre-item-background-3">Road Trip</div>
+          </div>
+          <!--End of genre item 3-->
+        </div>
+        <!-- Genre End -->
+
+        <!--Begining of latest english songs section-->
+        <div id="latest-songs">
+          <!--Latest English Songs title-->
+          <h2>Latest English</h2>
+          <!--Songs List Div-->
+          <div id="latest-songs-list">
+            <!--Song 1-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song Image-->
+                <div id="latest-songs-item-img-1">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Anyone</b><br /><date style="color: lightgrey"
+                    >January, 2021</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 1-->
+            <!--Song 2-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song Image-->
+                <div id="latest-songs-item-img-2">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Hey Boy</b><br /><date style="color: lightgrey"
+                    >November, 2020</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 2-->
+            <!--Song 3-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song Image-->
+                <div id="latest-songs-item-img-3">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Afterglow</b><br /><date style="color: lightgrey"
+                    >December, 2020</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 3-->
+            <!--Song 4-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song Image-->
+                <div id="latest-songs-item-img-4">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Vibez</b><br /><date style="color: lightgrey"
+                    >January, 2021</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 4-->
+            <!--Song 4-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song Image-->
+                <div id="latest-songs-item-img-5">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Higher</b><br /><date style="color: lightgrey"
+                    >January, 2021</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 5-->
+          </div>
+          <!--End of songs list div-->
+        </div>
+        <!--End of latest english songs section-->
+
+        <!--Begining of latest hindi songs section-->
+        <div id="latest-songs">
+          <!--Latest Hindi Songs title-->
+          <h2>Latest Hindi</h2>
+          <!--Latest songs list div-->
+          <div id="latest-songs-list">
+            <!--Song 1-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song image-->
+                <div id="latest-songs-item-img-6">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Kahaan Ho Tum</b><br /><date style="color: lightgrey"
+                    >November, 2020</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 1-->
+            <!--Song 2-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song image-->
+                <div id="latest-songs-item-img-7">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Dil Bechara</b><br /><date style="color: lightgrey"
+                    >July, 2020</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 2-->
+            <!--Song 3-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song image-->
+                <div id="latest-songs-item-img-8">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                  <!--End of song image-->
+                </div>
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Sun Toh</b><br /><date style="color: lightgrey"
+                    >November, 2020</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 3-->
+            <!--Song 4-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song image-->
+                <div id="latest-songs-item-img-9">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Oh Saiyaan</b><br /><date style="color: lightgrey"
+                    >January, 2021</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 4-->
+            <!--Song 5-->
+            <a
+              style="text-decoration: none; color: white"
+              href="/html/songDetails.html"
+            >
+              <div id="latest-songs-item">
+                <!--Song image-->
+                <div id="latest-songs-item-img-10">
+                  <!--Play button which is hidden and appears on hover-->
+                  <div id="latest-songs-item-button" class="hide">
+                    <i class="fas fa-play"></i>
+                  </div>
+                  <!--End of play button-->
+                </div>
+                <!--End of song image-->
+                <!--Song title-->
+                <div id="latest-songs-item-title">
+                  <b>Rabba Mehar Kari</b><br /><date style="color: lightgrey"
+                    >February, 2021</date
+                  >
+                </div>
+                <!--End of song title-->
+              </div>
+            </a>
+            <!--End of song 5-->
+          </div>
+          <!--End of latest songs list div-->
+        </div>
+        <!--End of latest hindi song section-->
+      </section>
+      <!-- Aside Music Play List -->
+      <aside class="playlist-aside-container">
+        <h2>Featured Playlists</h2>
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/playlist-1.png" alt="Playlist 1" />
+            <div>
+              <h3>Chill Vibes</h3>
+              <p>Relax and unwind with these soothing tunes.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/playlist-2.jpg" alt="Playlist 2" />
+            <div>
+              <h3>Workout Beats</h3>
+              <p>Get pumped up with energetic tracks for your workout.</p>
+            </div>
+          </div>
+        </a>
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/new-english-2.jpg" alt="Playlist 3" />
+            <div>
+              <h3>Study Mix</h3>
+              <p>Focus and concentrate with this instrumental playlist.</p>
+            </div>
+          </div>
+        </a>
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/playlist-4.jpg" alt="Playlist 4" />
+            <div>
+              <h3>Road Trip</h3>
+              <p>Hit the road with this eclectic mix of driving songs.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/new-hindi-5.jpg" alt="Playlist 5" />
+            <div>
+              <h3>Party Mix</h3>
+              <p>Get the party started with these upbeat tracks.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/playlist-1.png" alt="Playlist 1" />
+            <div>
+              <h3>Chill Vibes</h3>
+              <p>Relax and unwind with these soothing tunes.</p>
+            </div>
+          </div>
+        </a>
+
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/playlist-2.jpg" alt="Playlist 2" />
+            <div>
+              <h3>Workout Beats</h3>
+              <p>Get pumped up with energetic tracks for your workout.</p>
+            </div>
+          </div>
+        </a>
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/new-english-2.jpg" alt="Playlist 3" />
+            <div>
+              <h3>Study Mix</h3>
+              <p>Focus and concentrate with this instrumental playlist.</p>
+            </div>
+          </div>
+        </a>
+        <a href="#musicPlayerContainer2" id="anchor-link">
+          <div class="playlist-card">
+            <img src="images/playlist-4.jpg" alt="Playlist 4" />
+            <div>
+              <h3>Road Trip</h3>
+              <p>Hit the road with this eclectic mix of driving songs.</p>
+            </div>
+          </div>
+        </a>
+      </aside>
+
+      <!--  Aside Music Play List End -->
+    </section>
+    <!-- PlayList Section -->
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="footer-container">
+        <div id="footer-app-section" class="footer-section">
+          <div class="logo-container">
+            <img
+              src="/images/music-player-logo.png"
+              alt="App Logo"
+              class="app-logo"
+            />
+            <h2>Music App</h2>
+          </div>
+          <p>
+            "Streamlined music player app with intuitive interface. Seamless
+            navigation, extensive library management, customizable playlists,
+            and crisp audio quality. Enhance your listening experience
+            effortlessly with personalized recommendations and curated
+            playlists."
+          </p>
+        </div>
+        <div id="follow-us-section" class="footer-section">
+          <h3>Follow Us</h3>
+          <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Youtube</a></li>
+            <li><a href="#">Twiter</a></li>
+          </ul>
+        </div>
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>Email: contact@example.com</p>
+          <p>Phone: +123456789</p>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer Section End-->
+  </body>
+</html>
